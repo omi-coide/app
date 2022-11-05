@@ -1,0 +1,11 @@
+.cache/*
+.cache/
+.autoenv*
+compile_commands.json
+app
+*.o
+Makefile
+.qmake.stash
+*.log
+peda-session-app.txt
+.gdb_history
