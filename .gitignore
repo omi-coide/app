@@ -9,3 +9,4 @@ Makefile
 *.log
 peda-session-app.txt
 .gdb_history
+moc_*

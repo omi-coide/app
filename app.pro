@@ -4,7 +4,7 @@
 
 TEMPLATE = app
 TARGET = app
-INCLUDEPATH += . ./spdlog/include
+INCLUDEPATH += ./src ./spdlog/include
 
 # You can make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -14,7 +14,9 @@ INCLUDEPATH += . ./spdlog/include
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # Input
-SOURCES += src/main.cpp src/log.cpp
+SOURCES += src/log.cpp src/minusplus.cpp
+SOURCES += src/main.cpp
+HEADERS += src/minusplus.hpp
 QT += widgets
 #QMAKE_CXXFLAGS += -Wsign-conversion # -Weffc++
 #QMAKE_CFLAGS += -Wsign-conversion # -Weffc++
