@@ -27,7 +27,7 @@ int project_global::init_log() {
       "./app.log", 1024 * 1024 * 5, 3);
   sinks.push_back(sink2);
 
-  logger = std::make_shared<spdlog::logger>("logger", std::begin(sinks),
+  logger = std::make_shared<spdlog::logger>("main", std::begin(sinks),
                                             std::end(sinks));
   spdlog::register_logger(logger);
 
